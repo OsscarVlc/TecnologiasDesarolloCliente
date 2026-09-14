@@ -1,0 +1,11 @@
+<ul>
+    @for (cancion of dataCanciones; track cancion.nombre) {
+        <!-- class.activo que apra cambiar el estilo cuando se esta seleccionando una cancion
+         y (click)="seleccionar(cancion) es para actualizar la cancion si se da click -->
+        <li
+        [class.activo]="cancion === cancionActiva"  
+        (click)="seleccionar(cancion)">
+        
+        {{cancion.nombre}}</li>
+    }
+</ul>

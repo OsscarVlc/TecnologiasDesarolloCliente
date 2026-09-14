@@ -1,0 +1,17 @@
+li {
+  cursor: pointer;
+  padding: 8px 12px;
+  list-style: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 8px;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  &.activo {
+    background-color: #d0e8ff;
+    font-weight: bold;
+  }
+}

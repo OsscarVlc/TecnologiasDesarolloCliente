@@ -1,0 +1,11 @@
+@if (cancionElegida){
+    <p><b>Nombre: </b>{{cancionElegida.nombre}}</p>
+    <p><b>Autor:</b>{{cancionElegida.autor}}</p>
+    <p><b>Generos:</b>{{cancionElegida.generos.join(', ')}}</p>
+    <p><b>Fecha de Lanzamiento</b>{{cancionElegida.fechaLanzamiento}}</p>
+    <button (click)="limpiar()">Limpiar Cancion</button>
+} @else {
+    <h2>Selecciona una cancion</h2>
+}
+
+
