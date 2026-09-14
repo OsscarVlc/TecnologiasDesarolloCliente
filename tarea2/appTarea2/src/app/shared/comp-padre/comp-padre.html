@@ -1,0 +1,11 @@
+<div class="contenedor">
+  <app-panel-izq
+    [dataCanciones]="canciones"
+    [cancionActiva]="cancionSeleccionada"
+    (cancionSeleccionada)="handleCancion($event)">
+  </app-panel-izq>
+  <app-panel-der
+    [cancionElegida]="cancionSeleccionada"
+    (limpiarSeleccion)="handleLimpieza()">
+  </app-panel-der>
+</div>

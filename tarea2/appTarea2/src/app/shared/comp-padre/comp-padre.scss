@@ -1,0 +1,9 @@
+.contenedor {
+  display: flex;
+  gap: 20px;
+}
+
+app-panel-izq,
+app-panel-der {
+flex: 1;
+}
