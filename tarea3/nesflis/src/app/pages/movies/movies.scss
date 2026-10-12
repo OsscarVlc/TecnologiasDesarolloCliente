@@ -1,0 +1,38 @@
+.movies-grid{
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.search-input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #555555;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 24px;
+    background-color: #222222;
+    color: white;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.catalog-header{
+    margin-bottom: 24px;
+}
+
+.catalog-header h1{
+    margin: 0 0 8px;
+    font-size: clamp(28px, 4vw, 44px); //hace que el título se adapte al ancho de la ventana, sin bajar de 28 píxeles ni superar 44
+    font-weight: 700;
+}
+
+.catalog-header p{
+    margin: 0;
+    color: #b3b3b3;
+}

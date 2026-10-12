@@ -1,0 +1,12 @@
+<h1>Catálogo de películas</h1>
+<header class="catalog-header">Encuentra tu próxima película favorita</header>
+<label for="pelicula">Buscar Pelicula</label>
+<input id="pelicula" class="search-input" type="text" [(ngModel)]="search" placeholder="Buscar por título, director, productor, género o año">
+
+<div class="movies-grid">
+@for (movie of filteredMovies; track movie.id) {
+    <app-movie-card [movie]="movie"> </app-movie-card>
+} @empty {
+    <p>No se encontraron peliculas con esos filtros</p>
+}
+</div>

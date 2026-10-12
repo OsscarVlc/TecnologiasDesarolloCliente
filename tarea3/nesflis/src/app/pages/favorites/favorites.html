@@ -1,0 +1,10 @@
+<h1>Mis Favoritos</h1>
+<div class="favorites-grid">
+    @for(favorite of favorites; track favorite.id){
+        <app-movie-card [movie]="favorite" 
+        [showRemoveButton]="true" 
+        (removeFromFavorites)="removeFavorite($event)"> </app-movie-card>
+    }@empty{
+        <p>Todavia no tienes peliculas favoritas.</p>
+    }
+</div>

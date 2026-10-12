@@ -1,0 +1,16 @@
+@if (movie) {
+    <article class="movie-detail">
+        <img [src]="movie.imageUrl" [alt]="movie.title"  class="detail-poster">
+        <div class="detail-info">
+            <h1>{{movie.title}}</h1>
+            <p class="movie-description">{{ movie.description }}</p>
+            <p><strong>Año: </strong>{{ movie.year }}</p>
+            <p><strong>Género :</strong>{{ movie.genre }}</p>
+            <p><strong>Director:</strong>{{ movie.director }}</p>
+            <p><strong>Productor :</strong>{{ movie.producer }}</p>
+            <button (click)="toggleFavorite()"> {{isFavorite() ? 'Eliminar de favoritos' : 'Agregar a Favoritos'}} </button>
+        </div>
+    </article>
+}@else {
+    <p>Pelicula no encontrada</p>
+}

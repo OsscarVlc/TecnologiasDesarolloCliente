@@ -1,0 +1,54 @@
+.movie-detail{
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.detail-poster{
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.detail-info{
+    flex: 1 1 300px;
+    min-width: 0;
+}
+
+.detail-info h1{
+    margin: 0 0 20px;
+    font-size: clamp(28px, 4vw, 44px);
+
+}
+
+.detail-info p{
+    color: #b3b3b3;
+    line-height: 1.6;
+
+}
+.detail-info strong{
+    color: #ffffff;
+
+}
+
+.detail-info .movie-description{
+    color: #e5e5e5;
+    margin-bottom: 24px;
+}
+
+.detail-info button{
+    background-color: #e50914;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.detail-info button:hover{
+    background-color: #b20710
+}
