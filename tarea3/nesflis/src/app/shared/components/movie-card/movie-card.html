@@ -1,0 +1,9 @@
+  <article class="movie-card">
+    <a [routerLink]="['/movies', movie.id]" class="movie-card-link">
+      <img [src]="movie.imageUrl" [alt]="movie.title" >
+      <h2>{{ movie.title }}</h2>
+    </a>
+    @if (showRemoveButton){
+      <button (click)="removeFromFavorites.emit(movie.id)" > Quitar de favoritos </button>
+    }
+  </article>
